@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="kubus.css">
+    <title>Menghitung Luas</title>
+</head>
+<body>
+    <form onsubmit="enter(event)" class="user_from">
+        <div class="login">
+            <h2>Menghitung Volume Balok :</h2>
+            <div class="input-group">
+	            <input type="text" id="panjang" autofocus autocomplete="on">
+                <span for="panjang">Panjang</span>
+            </div>
+            <div class="input-group">
+	            <input type="text" id="lebar" autocomplete="on">
+                <span for="lebar">Lebar</span>
+            </div>
+            <div class="input-group">
+	            <input type="tinggi" id="tinggi" oninput="hasil()" autocomplete="on">
+                <span for="tinggi">Tinggi</span>
+            </div>
+            <div class="input-group">
+                <input type="submit" value="Hitung" onclick="resetMsg()">
+                <!-- <button type="submit" onclick="resetMsg()">Tampilkan</button> -->
+            </div>
+        </div>
+    </form>
+    
+
+    </div>
+	<!-- <p>Luas Persegi Pajang <span id="hasil"></span></p> -->
+    <script>
+        function enter(event){
+            event.preventDefault();
+
+            let panjang = document.getElementById('panjang').value;
+            let lebar = document.getElementById('lebar').value;
+            let tinggi = document.getElementById('tinggi').value;
+            let hasil = panjang * lebar * tinggi;
+            // document.getElementById('hasil').innerHTML = hasil;
+            alert(`
+            Hasil Perhitung Kubus Adalah = ${hasil}\n
+            `);
+        }
+        const resetMsg = () => {
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>

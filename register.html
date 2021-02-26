@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="animate__animated animate__bounce">Mendaftar</h1>
+        <div class="register">
+            <form action="index.html" onsubmit=" register()"> 
+                <!-- untuk pemanggilan Funcition -->
+                <legend><b>REGISTER</b></legend>
+                <table>
+                    <tr>
+                        <td><label for="username">Username</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="username" placeholder="Masukan Nama Anda" size="50px"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td>:</td>
+                        <td><input type="password" id="password" autocomplete="on" placeholder="Masukan Password" size="50px"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Have Account???</p></td>
+                        <td><a href="index.html">SignIn</a></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">SignUp</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>

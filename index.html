@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
+    <title>System Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <form action="kubus.html" method="get" onsubmit="return login()">
+                <legend><b>LOGIN</b></legend>
+                <table>
+                    <tr>
+                        <td><label for="username">Username</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="username" autocomplete="on" placeholder="Masukan Nama Anda" size="50px"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td>:</td>
+                        <td><input type="password" id="password" autocomplete="on" placeholder="Masukan Password" size="50px"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Not have account???</p></td>
+                        <td><a href="register.html">SignUp</a></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">SignIn</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>
